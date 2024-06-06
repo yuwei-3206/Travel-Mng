@@ -61,7 +61,7 @@ Server Response (Example): {"message": "User registered successfully. You can no
 ![1717620676681](https://github.com/yuwei-3206/Travel-mng/assets/122844465/f37c297d-9690-45fb-8392-7e3ab3d4635a)
 
 ### List travel plans
-Endpoint: /list/<string:user_id><br>
+Endpoint: travel_plans/list/<string:user_id><br>
 Method: GET<br>
 Parameters:<br>
 user_id (string): ID of the user.<br>
