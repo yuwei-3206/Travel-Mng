@@ -44,41 +44,41 @@ Before register, the database only has 1 user
 There are two blueprints: users and travel_plans. Users has 3 routes, while travel_plans has 4 routes. Below are examples of 2 routes.
 
 ### User Register
-Endpoint: users/register
-Method: POST
-Parameters:
-firstName (string): First name of the user.
-lastName (string): Last name of the user.
-username (string): Username of the user.
-password (string): Password of the user.
-Example Request Body: {
-  "firstName": "John",
-  "lastName": "Doe",
-  "username": "johndoe@example.com",
-  "password": "password123"
-}
-Server Response (Example): {"message": "User registered successfully. You can now login."}
+Endpoint: users/register<br>
+Method: POST<br>
+Parameters:<br>
+firstName (string): First name of the user.<br>
+lastName (string): Last name of the user.<br>
+username (string): Username of the user.<br>
+password (string): Password of the user.<br>
+Example Request Body: {<br>
+  "firstName": "John",<br>
+  "lastName": "Doe",<br>
+  "username": "johndoe@example.com",<br>
+  "password": "password123"<br>
+}<br>
+Server Response (Example): {"message": "User registered successfully. You can now login."}<br>
 ![1717620676681](https://github.com/yuwei-3206/Travel-mng/assets/122844465/f37c297d-9690-45fb-8392-7e3ab3d4635a)
 
 ### List travel plans
-Endpoint: /list/<string:user_id>
-Method: GET
-Parameters:
-user_id (string): ID of the user.
-Server Response (Example):
-{
-  "travel_plans": [
-    {
-      "id": "user_id",
-      "location": "Philadelphia",
-      "days": 5
-    },
-    {
-      "id": "user_id",
-      "location": "New York",
-      "days": 7
-    }
-  ]
-}
+Endpoint: /list/<string:user_id><br>
+Method: GET<br>
+Parameters:<br>
+user_id (string): ID of the user.<br>
+Server Response (Example):<br>
+{<br>
+  "travel_plans": [<br>
+    {<br>
+      "id": "user_id",<br>
+      "location": "Philadelphia",<br>
+      "days": 5<br>
+    },<br>
+    {<br>
+      "id": "user_id",<br>
+      "location": "New York",<br>
+      "days": 7<br>
+    }<br>
+  ]<br>
+}<br>
 ![1717620395993](https://github.com/yuwei-3206/Travel-mng/assets/122844465/e5db5f35-e6df-4bb4-b3c7-afc9165b7e7e)
 ![1717620812201](https://github.com/yuwei-3206/Travel-mng/assets/122844465/f2237241-7b3a-4dac-901f-bc64bdb8eade)
